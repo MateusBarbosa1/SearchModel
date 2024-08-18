@@ -1,0 +1,22 @@
+{
+  "name": "searchmodel",
+  "version": "1.0.0",
+  "description": "Criando uma aplicação que tem um search input que funcione",
+  "main": "server.js",
+  "scripts": {
+    "dev": "npm run services:up && nodemon server.js",
+    "services:up": "docker compose -f infra/compose.yaml up -d"
+  },
+  "author": "Mateus Barbosa",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "prisma": "^5.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
